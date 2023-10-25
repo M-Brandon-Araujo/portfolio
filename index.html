@@ -2,59 +2,110 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>BRANDON ARAUJO PORTFOLIO</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TEST</title>
         <script src="script.js" defer></script>
         <link rel="stylesheet" href="style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;300;400;600&display=swap" rel="stylesheet">
     </head>
     <body>
-        <div class="header">
-            <div class="home-link">HOME</div>
-            <div class="about-link">ABOUT</div>
-            <div class="projects-link">PROJECTS</div>
-            <div class="contact-link">CONTACT</div>
-        </div>
-        <div class="name-section">
-            <div class="first-name"></div>
-            <div class="last-name"></div>
-        </div>
-        <div class="about-section">
-            <div class="about-content">
-                <div class="about-text-container">
-                    <div class="about-title">
-                        <h2>ABOUT ME</h2>
-                    </div>
-                    <div class="about-text">
-                        <p>Greetings, I'm Brandon Araujo, a passionate web developer and
-                            professional artist. Embracing the creative journey, I find joy in learning
-                            and the art of problem-solving. My goal is to secure a role as a junior developer,
-                            where I can contribute my skills and enthusiasm to innovative projects. 
-                        </p>
-                    </div>
-                </div>
-                <div class="about-links-photo-container">
-                    <div class="about-links-container">
-                        <btn class="cv-link">CV</btn>
-                        <btn class="art-link">ART</btn>
-                    </div>
-                    <img class="flower-image" src="./images/flower1.jpg">
+        <header>
+            <div class="menu-container">
+                <div class="menu">
+                    <div class="about-link">ABOUT</div>
+                    <div class="projects-link">PROJECTS</div>
+                    <div class="contact-link">CONTACT</div>
                 </div>
             </div>
-            <div class="jewel-container">
-                <div class="jewel-shape-1"></div>
-                <div class="jewel-housing">
-                    <div class="jewel"></div>
-                </div>
-                <div class="jewel-shape-2"></div>
+            <div class="name-container">
+                <img class="name-image" src="./images/firstNameSussex.png">
+                <img class="name-image" src="./images/lastNameSussex.png">
             </div>
+        </header>
+
+        <section class="about">
+            <div class="about-container">
+                <div class="about-text">
+                    <h2 class="about-title">ABOUT ME</h2>
+                    <p class="about-paragraph">aliquet lectus proin nibh nisl condimentum id venenatis a condimentum vitae sapien pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas sed tempus urna et pharetra pharetra massa massa ultricies mi quis hendrerit dolor magna eget</p>
+                </div>
+                <div class="btns-image-container">
+                    <div class="about-btns-container">
+                        <button type="button" class="cv-btn">CV</btn>
+                        <button type="button" class="art-btn">ART</btn>
+                    </div>
+                    <div class="about-image">
+                        <img src="./images/flower-1.jpg"
+                    </div>
+                </div>
+            </div>            
+        </section>
+
+        <div class="ornament-container">
+            <div class="ornament-shape-1"></div>
+            <div class="ornament"></div>
+            <div class="ornament-shape-2"></div>
         </div>
-        <div class="project-section">
-            <div class="project-title">PROJECTS</div>
+
+        <section class="projects-section">
             <div class="projects-container">
-                <div class="calculator-card"></div>
+                <div class="projects-title-container">
+                    <h2>PROJECTS</h2>
+                </div>
+                <div class="cards-container">
+                    <div class="card calculator-card">
+                        <div class="card-title">CALCULATOR</div>
+                        <img class="card-image" src="./images/calculator-image.jpg">
+                        <div class="card-links">
+                            <button type="button" class="code-link">VIEW CODE</button>
+                            <button type="button" class="live-link">VIEW LIVE</button>
+                        </div>
+                    </div>
+                    <div class="card etch-a-sketch-card">
+                        <div class="card-title">ETCH-A-SKETCH</div>
+                        <img class="card-image" src="./images/etch-a-sketch-image.jpg">
+                        <div class="card-links">
+                            <button type="button" class="code-link">VIEW CODE</button>
+                            <button type="button" class="live-link">VIEW LIVE</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards-container">
+                    <div class="card paper-rock-scissors-card">
+                        <div class="card-title">PAPER-ROCK-SCISSORS</div>
+                        <img class="card-image" src="./images/paper-rock-scissors-image.jpg">
+                        <div class="card-links">
+                            <button type="button" class="code-link">VIEW CODE</button>
+                            <button type="button" class="live-link">VIEW LIVE</button>
+                        </div>
+                    </div>
+                    <div class="card portfolio-card">
+                        <div class="card-title">PORTFOLIO</div>
+                        <img class="card-image" src="./images/portfolio-image.jpg">
+                        <div class="card-links">
+                            <button type="button" class="code-link portfolio-code-link">VIEW CODE</button>
+                        </div>
+                        <div class="card-text">
+                            <p>This will be card text</p>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </section>
+
+        <div class="ornament-container">
+            <div class="ornament-shape-1"></div>
+            <div class="ornament"></div>
+            <div class="ornament-shape-2"></div>
         </div>
+
+        <section class="contact">
+            <h2 class="contact-title">CONTACT ME</h2>
+            <btn class="linkedin-link">LINKEDIN</btn>
+            <btn class="email-link">EMAIL</btn>
+            <btn class="instagram-link">INSTAGRAM</btn>
+        </section>
     </body>
 </html>
