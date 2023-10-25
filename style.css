@@ -1,269 +1,243 @@
-html {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
 
 body {
+    background-color: black;
+    scrollbar-color: black;
+}
+
+body,
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+    font-family: 'Roboto Mono', sans-serif;
+}
+
+p {
+    font-size: 2vw;
+    font-weight: 300;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+section {
+    padding: 1.8rem;
+}
+
+header {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0;
-    padding: 0;
-    background-image: url('./images/purple-gradient-5.jpg');
+    background-image: url('./images/purple-gradient.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
+    height: 100vh;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
-.header {
+.menu-container {
+    margin-left: auto;
+}
+
+.menu {
+    color: #dbdbdb;
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 50px;
-    color: white;
-    width: 100%;
-    height: 50px;
-    font-family: 'Roboto Mono', monospace;
-    font-size: 20px;
+    gap: 2rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding-right: 1rem;
+    padding-top: 1rem;
 }
 
-.contact-link {
-    padding-right: 80px;
-}
-
-.name-section {
-    height: 700px;
-    width: 100%;
+.name-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 5px;
+    max-width: 800px;
+    flex-grow: 1;
 }
 
-.first-name {
-    height: 200px;
-    width: 800px;
-    background-image: url('./images/firstNameSussex.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.last-name {
-    height: 200px;
-    width: 800px;
-    background-image: url('./images/lastNameSussex.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-bottom: 30px;
-}
-
-.about-section {
-    box-sizing: border-box;
-    height: 700px;
-    width: 100%;
+.about {
     background-color: black;
-    border-top: solid black 20px;
-    border-right: solid black 20px;
-    border-left: solid black 20px;
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    gap: 1.5rem;
 }
 
 .about-container {
-    height: 100%;
-    width: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 20px;
-    background-color: black;
+    flex-grow: 1;
 }
 
-.about-content {
-    width: 100%;
-    height: 100%;
+.about-text {
+    display: flex;
+    flex-direction: column;
     background-color: #dbdbdb;
-    margin-bottom: 10px;
-    display: flex;
-
+    padding: 3rem;
+    text-align: center;
+    gap: 1rem;
+    font-weight: 400;
 }
 
-.about-links-photo-container {
-    height: 100%;
-    width: 55%;
-    flex-grow: 2;
-    background-color: black;
+.btns-image-container {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: space-between;
 }
 
-.about-links-container {
-    width: 100%;
-    height: 100%;
-    background-color: black;
-}
-
-/*.cv-link {
-    width: 100px;
-    height: 100px;
-    padding: 20px;
-    border-radius: 150px;
-    background-color: grey;
-}
-
-.art-link {
-    width: 100px;
-    height: 100px;
-    padding: 20px;
-    border-radius: 150px;
-    background-color: grey;
-}*/
-
-.flower-image {
-    width: 100%;
+.about-image {
+    width: 54vw;
     border-top: solid rgb(108, 109, 157) 1px;
     border-right: solid rgb(108, 109, 157) 1px;
     border-bottom: solid rgb(108, 109, 157) 1px;
 }
 
-.about-text-container {
-    height: 100%;
-    width: 44%;
+.about-btns-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-grow: 1;
-    background-color: #dbdbdb;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    font-family: 'Roboto Mono', monospace;
+    gap: 3rem;
 }
 
-.about-title {
+.cv-btn,
+.art-btn {
+    background-color: black;
+    color: #dbdbdb;
+    border: solid #dbdbdb 1px;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.ornament-container {
+    padding: 1.3rem;
     width: 100%;
-    font-size: 20px;
-    font-family: 'Roboto Mono', monospace;;
-    color: #474762;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.about-text {
-    padding: 0px 50px 0px 50px;
-    font-size: 25px;
-    color: rgb(71, 71, 98);
-}
-
-.jewel-container {
-    width: 100%;
-    height: 120px;
+    height: 6rem;
     background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.jewel-shape-1 {
-    width: 50px;
-    height: 100px;
+.ornament-shape-1 {
+    width: 3.2rem;
+    height: 6vw;
     background-color: black;
     border: solid rgb(108, 109, 157) 1px;
 }
 
-.jewel-housing {
-    width: 90%;
-    height: 100px;
-    background-color: black;
-    border: solid rgb(108, 109, 157) 1px;
-    border-radius: 150px;
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-}
-
-.jewel {
-    width: 98.5%;
-    height: 85%;
+.ornament {
+    width: 79rem;
+    height: 6vw;
     background-image: url('./images/purple-gradient-9.jpg');
     background-size: cover;
     background-attachment: fixed;
     background-position: center center;
     border-radius: 150px;
+    border: solid rgb(108, 109, 157) 1px; 
 }
 
-.jewel-shape-2 {
-    width: 50px;
-    height: 100px;
+.ornament-shape-2 {
+    width: 3.2rem;
+    height: 6vw;
     background-color: black;
     border: solid rgb(108, 109, 157) 1px;
 }
 
-/*.jewel {
-    width: 270px;
-    height: 570px;
-    border-radius: 150px;
-    border: solid white 1px;
-    background-image: url('./images/testamber-gradient-1.jpg');
-    background-size: contain;
-    background-position: 70px 50px;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}*/
+.projects-section {
+    background-color: black;
+    color: #dbdbdb;
+    text-align: center; 
+}
 
-.project-section {
-    box-sizing: border-box;
-    height: 900px;
-    width: 100%;
-    background-image: url('./images/purple-gradient-9.jpg');
+.projects-container {
+    background-color: #dbdbdb;
+    display: flex;
+    flex-direction: column;
+}
+
+.projects-title-container {
+    background-color: black;
+    height: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    border: solid rgb(108, 109, 157) 1px;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 5rem 2rem 5rem ;
+    gap: 4rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 30rem;
+    height: 30rem;
+    border: solid black 1px;
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+.card-title {
+    background-color: #dbdbdb;
+    color: black;
+    font-size: 2rem;
+    padding-bottom: .5rem;
+}
+
+.card-links {
+    margin-top: 5rem;
+}
+
+.contact {
+    color: #dbdbdb;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('./images/purple-gradient-6.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    align-items: center;
-    border-top: solid black 10px;
-    border-right: solid black 20px;
-    border-bottom: solid black 20px;
-    border-left: solid black 20px;
+    height: 100vh;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-top: 1.3rem;
 }
 
-.project-title {
-    width: 100%;
-    height: 180px;
-    background-color: black;
-    border: solid rgb(108, 109, 157) 1px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Roboto Mono', monospace;
-    color: white;
-    font-size: 30px;
+.contact-title {
+    margin-top: 1rem;
+    font-size: 5rem;
 }
 
-.projects-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+img {
+    max-width: 100%;
+    display: block;
 }
-
-.calculator-card {
-    width: 300px;
-    height: 400px;
-    background-color: rgba(75, 76, 106, 0.3);
-    border: solid rgb(142, 127, 182) 3px;
-    filter: blur(8px);
-    margin-top: 40px;
-}
-
-
-
