@@ -369,6 +369,8 @@ img {
 
     header {
         background-image: url('./images/mobile-gradient-15-01.jpg');
+        height: 100vh;
+        max-width: 100%;
     }
 
     .menu-container {
@@ -464,6 +466,8 @@ img {
 
     .contact-section {
         background-image: url('./images/mobile-gradient-1-01.jpg');
+        height: 100vh;
+        max-width: 100%
     }
 
     .contact-links-container {
