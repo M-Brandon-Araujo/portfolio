@@ -18,6 +18,14 @@ p {
     font-family: 'Roboto Mono', sans-serif;
 }
 
+a:visited {
+    color: #dbdbdb;
+}
+
+a {
+    text-decoration: none;
+}
+
 p {
     font-size: 2vw;
     font-weight: 300;
@@ -47,6 +55,11 @@ header {
     padding-right: 2rem;
 }
 
+a,
+.menu {
+    color: #dbdbdb;
+}
+
 .menu-container {
     margin-left: auto;
 }
@@ -70,7 +83,7 @@ header {
     flex-grow: 1;
 }
 
-.about {
+.about-section {
     background-color: black;
     height: 100vh;
     display: flex;
@@ -101,7 +114,7 @@ header {
     justify-content: space-between;
 }
 
-.about-image {
+.about-image-container {
     width: 54vw;
     border-top: solid rgb(108, 109, 157) 1px;
     border-right: solid rgb(108, 109, 157) 1px;
@@ -126,6 +139,8 @@ header {
     border-radius: 50%;
     text-align: center;
     margin-bottom: 1rem;
+    line-height: 3rem; 
+    line-height: 4.8rem;
 }
 
 .ornament-container {
@@ -201,6 +216,8 @@ header {
     border: solid black 1px;
     border-radius: 5px;
     padding: 1rem;
+    width: min(90%, 70.5rem);
+    height: min(90%, 70.5rem);
 }
 
 .card-title {
@@ -210,13 +227,35 @@ header {
     padding-bottom: .5rem;
 }
 
-.card-links {
-    margin-top: 5rem;
+.card-links-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 1rem 1rem 0 1rem;
+    gap: 1rem;
 }
 
-.contact {
+.card-link {
+    background-color: #dbdbdb;
+    color: black;
+    border: 1px solid black;
+    width: 8rem;
+    height: 3rem;
+    border-radius: 4rem;
+    text-decoration: none;
+    padding: .8rem;
+    font-weight: 400;
+    line-height: 1.2rem;
+}
+
+.card-link:visited {
+    color: black;
+}
+
+.contact-section {
     color: #dbdbdb;
-    font-size: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -230,14 +269,175 @@ header {
     padding-left: 2rem;
     padding-right: 2rem;
     margin-top: 1.3rem;
+    gap: 4rem;
+}
+
+.contact-main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5rem;
+    padding: 1.3rem;
 }
 
 .contact-title {
-    margin-top: 1rem;
-    font-size: 5rem;
+    font-size: 400%;
+}
+
+.contact-links-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem; 
+}
+
+.contact-link {
+    font-size: 1.6rem;
+    width: 20vw;
+    line-height: 4rem;
+    text-decoration: none;
+    color: #dbdbdb;
+    background-color: black;
+    border-radius: 5rem;
+    border: solid #dbdbdb 1px;
+    text-align: center;
+    font-weight: 300;
+    display: block;
 }
 
 img {
     max-width: 100%;
     display: block;
+}
+
+@media (max-width: 60em) {
+
+    header,
+    section {
+        padding: 1rem 0;
+    }
+
+    header {
+        background-image: url('./images/mobile-gradient-15-01.jpg');
+    }
+
+    .menu-container {
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+
+    .menu {
+        padding: 0;
+    }
+
+    .name-container {
+        padding: 1.3rem;
+    }
+
+    .about-section {
+        height: 100%;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .about-container {
+        flex-direction: column;
+    }
+
+    p,
+    .about-text {
+        font-size: 1rem;
+    }
+
+    .btns-image-container {
+        flex-direction: row;
+    }
+
+    .about-btns-container {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: space-around;
+        gap: 0;
+    }
+    
+    .cv-btn,
+    .art-btn {
+        height: 3rem;
+        width: 3rem;
+        font-size: .8rem;
+        margin: 0;
+        line-height: 2.8rem;
+    }
+
+    .about-image-container {
+        border: 0;
+        flex-grow: 2;
+        align-items: center;
+    }
+
+    .about-image {
+        border-bottom: solid rgb(108, 109, 157) 1px;
+        border-left: solid rgb(108, 109, 157) 1px;
+    }
+
+    .ornament-container {
+        height: 3rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-top: 1rem; 
+    }
+
+    .ornament-shape-1,
+    .ornament-shape-2 {
+        height: 2.5rem;;
+    }
+
+    .ornament {
+        height:2.5rem;
+        background-image: url('./images/mobile-gradient-1-01.jpg');
+    }
+
+    .cards-container {
+        flex-direction: column;
+    }
+
+    .card-title {
+        font-size: 1rem;
+    }
+
+    .card-links-container {
+        flex-direction: column;
+    }
+
+    .contact-section {
+        background-image: url('./images/mobile-gradient-1-01.jpg');
+    }
+
+    .contact-links-container {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 20rem;
+    }
+
+    .portfolio-card {
+        height: 18rem;
+    }
+
+    .contact-title {
+        font-size: 2rem;
+    }
+
+    .contact-link {
+        width: 10rem;
+        height: 3rem;
+        line-height: 2.8rem;
+        font-size: 1.2rem;
+    }
 }
