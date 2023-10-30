@@ -24,10 +24,11 @@ a:visited {
 
 a {
     text-decoration: none;
+    color: inherit;
 }
 
 p {
-    font-size: 2vw;
+    font-size: 1.8vw;
     font-weight: 300;
 }
 
@@ -55,11 +56,6 @@ header {
     padding-right: 2rem;
 }
 
-a,
-.menu {
-    color: #dbdbdb;
-}
-
 .menu-container {
     margin-left: auto;
 }
@@ -74,6 +70,12 @@ a,
     padding-top: 1rem;
 }
 
+.about-jumplink:hover,
+.projects-jumplink:hover,
+.contact-jumplink:hover {
+    text-shadow: white 1px 0 10px;
+}
+
 .name-container {
     display: flex;
     flex-direction: column;
@@ -81,6 +83,23 @@ a,
     align-items: center;
     max-width: 800px;
     flex-grow: 1;
+    overflow: hidden;
+}
+
+.name-image {
+    animation-name: focus;
+    animation-duration: 5s;
+}
+
+@keyframes focus {
+    from {
+        opacity: 0.1;
+        filter: blur(8px);
+    }
+    to {
+        opacity: 1;
+        filter: blur(0px);
+    }
 }
 
 .about-section {
@@ -141,6 +160,17 @@ a,
     margin-bottom: 1rem;
     line-height: 3rem; 
     line-height: 4.8rem;
+}
+
+.cv-btn:hover,
+.art-btn:hover {
+    text-shadow: white 1px 0 10px;
+    box-shadow: white 0 0 10px;
+}
+
+.cv-btn:active,
+.art-btn:active {
+    transform: translateY(4px);
 }
 
 .ornament-container {
@@ -254,6 +284,15 @@ a,
     color: black;
 }
 
+.card-link:hover {
+    background-color: black;
+    color: #dbdbdb;
+}
+
+.card-link:active {
+    transform: translateY(4px);
+}
+
 .contact-section {
     color: #dbdbdb;
     display: flex;
@@ -305,6 +344,15 @@ a,
     text-align: center;
     font-weight: 300;
     display: block;
+}
+
+.contact-link:hover {
+    background-color: #dbdbdb;
+    color: black;
+}
+
+.contact-link:active {
+    transform: translateY(4px);
 }
 
 img {
